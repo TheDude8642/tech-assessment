@@ -35,7 +35,6 @@ public class OrderRepository
         {
             var orderToUpdate = _orders[id];
             orderToUpdate.Canceled = true;
-            _orders[id] = orderToUpdate;
             return true;
         }
         return false;
